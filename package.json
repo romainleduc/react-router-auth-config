@@ -1,0 +1,75 @@
+{
+  "name": "react-router-auth-config",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "webpack": "webpack",
+    "dev": "npm run webpack -- --mode development --watch",
+    "build": "npm run webpack -- --mode production",
+    "build-types": "tsc -d --emitDeclarationOnly --outDir types",
+    "format": "eslint --ext tsx --ext ts src --fix",
+    "lint": "eslint --ext tsx --ext ts src && tsc --noEmit",
+    "test": "yarn test:coverage",
+    "test:coverage": "jest src --coverage",
+    "test:coverage:ci": "jest src --ci --coverage",
+    "test:watch": "npm run test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romainleduc/react-router-auth-config.git"
+  },
+  "author": "Romain LEDUC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/romainleduc/react-router-auth-config/issues"
+  },
+  "homepage": "https://github.com/romainleduc/react-router-auth-config#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "@faker-js/faker": "^7.6.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.4.0",
+    "@types/react": "^18.0.38",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^5.2.6",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.1",
+    "lint-staged": "^11.0.1",
+    "path": "^0.12.7",
+    "prettier": "^2.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^6.10.0",
+    "react-router-dom": "^6.10.0",
+    "typescript": "^4.3.5",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "react-router": ">=6.10.0",
+    "react-router-dom": ">=6.10.0"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "react-redux": "^8.0.5"
+  }
+}
